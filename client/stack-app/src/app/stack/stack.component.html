@@ -1,0 +1,16 @@
+<div>
+    <form #stackForm="ngForm">
+        <h2>Stack Size</h2>
+        <input type="number" id="stackSize" [(ngModel)]="stackSize" name="stackSize">
+        <button (click)="updateStackSize()">Update Stack Size</button>
+        <br><br><br>
+        <h2>Stack Operations</h2>
+        <input type="number" id="inputNumber" [(ngModel)]="inputNumber" name="inputNumber" required>
+        <button (click)="pushToStack()" [disabled]="!stackForm.valid">Push Item</button>
+        <button (click)="popFromStack()" [disabled]="stack.length == 0">Pop Item</button>
+        <ul>
+        <li *ngFor="let item of stack.reverse()">{{ item }}</li>
+        </ul>
+    </form>
+</div>
+  
