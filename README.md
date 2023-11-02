@@ -90,4 +90,4 @@ The stack data structure is implemented using JavaScript arrays. The stack size 
 
 ## Contributors
 
-- [Your Name](https://github.com/yourusername)
+- [Himanshu Neo Garg](https://github.com/hn-g)
